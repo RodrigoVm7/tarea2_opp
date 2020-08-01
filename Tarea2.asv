@@ -26,7 +26,7 @@ classdef Tarea2 < handle
                 for j=1+repy:yDim-repy    
                     for z=1:3
                         N = Irep(i-repx:i+repx, j-repy:j+repy,z);
-                        wij = g.* exp(- (Irep(i,j,z) - N).^2./(2.*sigma_r.^2));
+                        wij = g.* exp(- (Irep(i,j,:) - N).^2./(2.*sigma_r.^2));
                         wij = wij./sum(wij(:));
                         Ibf(i-repx,j-repy,z) = sum(wij(:).*N(:));
                     end
