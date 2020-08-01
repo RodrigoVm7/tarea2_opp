@@ -9,7 +9,7 @@ classdef Tarea2 < handle
             img.imProcesada = zeros(size(im));
         end
         
-        function filtroBilateralEscalaGrises(img, sigma_d, sigma_r)
+        function filtroBilateral(img, sigma_d, sigma_r)
             I = double(img.imOriginal);
             g = fspecial('gaussian',[sigma_d*3 sigma_d*3], sigma_d);
             [repx repy] = size(g);
