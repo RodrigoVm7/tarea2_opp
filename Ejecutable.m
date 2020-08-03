@@ -1,6 +1,6 @@
 close all;
 
-sigma_r = [5,10,15,20,25,30,35,40,45,50,55];
+sigma_r = [20,25,30,35,40,45,50,55];
 sigma_d = [5/3, 7/3, 11/3];
 dataSnr = zeros(1,length(sigma_r));
 
