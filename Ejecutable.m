@@ -30,4 +30,4 @@ title('Valores SNR Rubiks'),
 xlabel('Sigma_r'),
 ylabel('SNR'),
 lgd = legend('5/3','7/3','11/3'),
-title(lgd, 'Sigma d'),
+title(lgd, 'Sigma d');
