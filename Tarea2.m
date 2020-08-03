@@ -30,7 +30,6 @@ classdef Tarea2 < handle
                         wij = wij./sum(wij(:));
                         Ibf(i-repx,j-repy,z) = sum(wij(:).*N(:));
                     end
-                    
                 end
             end
             img.imProcesada = uint8(Ibf);
